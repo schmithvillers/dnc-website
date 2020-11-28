@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://blogfonts.com/css/aWQ9MTQwNzg5JnN1Yj03ODkmYz10JnR0Zj1UQ0NNX19fXy5UVEYmbj10dy1jZW4tbXQtY29uZGVuc2VkLTI/Tw Cen MT Condensed.ttf" rel="stylesheet" type="text/css"/>
+<link href="https://blogfonts.com/css/aWQ9MTQwNzg5JnN1Yj03ODkmYz10JnR0Zj1Ud0Nlbk1UQ29uZGVuc2VkQm9sZC50dGYmbj10dy1jZW4tbXQtY29uZGVuc2Vk/Tw Cen MT Condensed.ttf" rel="stylesheet" type="text/css"/>
+
+<!--  custom css file  -->
+<link rel="stylesheet" href="./css/event-style.css">
+<link rel="stylesheet" href="./css/main.css" />
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div >
+        <div class="wave"></div>
+      </div>
+      <div >
+        <div class="wave1"></div>
+      </div>
+
+<!-- ----------------------------------------------SIDE NAV-BAR START ----------------------------------------------> 
+<div class="Navibar">
+    <div id="mySidenav" class="sidenav ">
+        <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./main-page.html">HOME</a>
+        <a href="#" style="color: rgb(205, 96, 205);">EVENT</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SETTINGS</a>
+    </div>
+    
+    <div id="main" class="sidebar">
+        <span style="font-size:20px;cursor: default;" onclick="openNav()">&#8594;</span>
+        <br><br>
+        <a href="./main-page.html"><img class="home-icon" src="./icon/2947980-user-interface/logo/home1.png"></a>
+        <br>
+        <br>
+        <img class="home-icon" style="filter: grayscale(0);" src="./icon/2947980-user-interface/logo/event1.png">
+        <br><br>
+        <img class="home-icon" src="./icon/2947980-user-interface/logo/about1.png">
+        <br><br>
+        <img class="home-icon" src="./icon/2947980-user-interface/logo/setting1.png">
+    </div>
+    
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "130px";
+        document.getElementById("main").style.marginLeft = "130px";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+</div>
+<!-- ---------------------------------------------- SIDE NAV-BAR END ---------------------------------------------->
+
+<!-- ---------------------------------------------- CARD 1 START ---------------------------------------------->
+<div class="main-area">
+    <div>
+        <a class="join-us">
+            <span class="join" onclick="openNav1()"> JOIN US</span> 
+        </a>
+        <!-- ----------------------------------------REGISTERATION OVERLAY BODY START--------------------------------->
+    <div >
+        <div id="ovlay" class="overlay">
+            <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+            <div class="overlay-content">
+                <form action="/action_page.php">
+                    <input type="text" class="form-input1" placeholder="First Name">
+                    <input type="text" class="form-input" placeholder="Middle Name">
+                    <input type="text" class="form-input" placeholder="Last Name"><br>
+                    <input type="text" style="width:700px" class="form-input" placeholder="Email ID"><br>
+                    <input type="text" class="form-input" placeholder="WhatsApp Number">
+                    <input type="text" class="form-input" placeholder="Date of Birth"><br>
+                    <input type="text" class="form-input" placeholder="Which year of college are you in?"><br>
+                    <input type="text" class="form-input" placeholder="College Name"><br>
+                    <input type="text" class="form-input" placeholder="Degree">
+                    <input type="text" class="form-input" placeholder="Branch">
+                    <input type="submit" value="Submit">
+                </form> 
+        </div>
+        <script>
+        function openNav1() {
+        document.getElementById("ovlay").style.height = "100%";
+        }
+         function closeNav1() {
+        document.getElementById("ovlay").style.height = "0%";
+        }
+      </script>
+    </div>
+<!-- ----------------------------------------REGISTERATION OVERLAY BODY END--------------------------------->
+        <p class="event-text">EVENTS</p>
+        <p class="event-subtext">Ready to join the movement? Check out what's happening soon in your area.<br>
+            Explore community events near you, request your own!<br>U - Upcoming Event<br>C - Completed Event</p>
+    </div>
+
+<div class="card-area">
+<div class="event">
+    <div class="rank">U</div>
+    <div class="front">
+        <img class="thumbnail" src="./img/event1.jpg" alt="">
+        <h3 class="name">Event Name</h3>
+        <div class="stats">
+            <div class="streamers">
+                <img src="./img/img1.jpeg" alt="">
+                <img src="./img/img2.jpg" alt="">
+                <img src="./img/img3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <div class="streaming-info">
+            <p class="event-stat">25th<span>November</span></p>
+            <p class="event-stat">6-8pm<span>Online</span></p>
+        </div>
+        <button class="btn">Register</button>
+        <div class="streamers">
+            <div class="streamer">
+                <div class="icon"><img src="./img/img1.jpeg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Mr.ABC</p>
+            </div>
+            <div class="streamer">
+                <div class="icon"><img src="./img/img2.jpg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Ms.PQR</p>
+            </div>
+            <div class="streamer">
+                <div class="icon"><img src="./img/img3.jpg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Mr.XZY</p>
+            </div>
+        </div>
+    </div>
+        <div class="background"></div>
+</div>
+<!-- ---------------------------------------------- CARD 1 END ---------------------------------------------->
+<!-- ---------------------------------------------- CARD 2 START ---------------------------------------------->
+<div class="event">
+    <div class="rank">U</div>
+    <div class="front">
+        <img class="thumbnail" src="./img/event2.jpg" alt="">
+        <h3 class="name">Event Name</h3>
+        <div class="stats">
+            <div class="streamers">
+                <img src="./img/img1.jpeg" alt="">
+                <img src="./img/img2.jpg" alt="">
+                <img src="./img/img3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <div class="streaming-info">
+            <p class="event-stat">25th<span>Nov</span></p>
+            <p class="event-stat">6-8pm<span>Online</span></p>
+        </div>
+        <button class="btn">Register</button>
+        <div class="streamers">
+            <div class="streamer">
+                <div class="icon"><img src="./img/img1.jpeg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Mr.ABC</p>
+            </div>
+            <div class="streamer">
+                <div class="icon"><img src="./img/img2.jpg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Ms.PQR</p>
+            </div>
+            <div class="streamer">
+                <div class="icon"><img src="./img/img3.jpg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Mr.XZY</p>
+            </div>
+        </div>
+    </div>
+        <div class="background"></div>
+</div>
+<!-- ---------------------------------------------- CARD 2 END ---------------------------------------------->
+<!-- ---------------------------------------------- CARD 3 START ---------------------------------------------->
+<div class="event">
+    <div class="rank">C</div>
+    <div class="front">
+        <img class="thumbnail" src="./img/event3.jpg" alt="">
+        <h3 class="name">Event Name</h3>
+        <div class="stats">
+            <div class="streamers">
+                <img src="./img/img1.jpeg" alt="">
+                <img src="./img/img2.jpg" alt="">
+                <img src="./img/img3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <div class="streaming-info">
+            <p class="event-stat">25th<span>November</span></p>
+            <p class="event-stat">6-8pm<span>Online</span></p>
+        </div>
+        <button class="btn">Register</button>
+        <div class="streamers">
+            <div class="streamer">
+                <div class="icon"><img src="./img/img1.jpeg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Mr.ABC</p>
+            </div>
+            <div class="streamer">
+                <div class="icon"><img src="./img/img2.jpg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Ms.PQR</p>
+            </div>
+            <div class="streamer">
+                <div class="icon"><img src="./img/img3.jpg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Mr.XZY</p>
+            </div>
+        </div>
+    </div>
+        <div class="background"></div>
+</div>
+<!-- ---------------------------------------------- CARD 3 END ---------------------------------------------->
+<!-- ---------------------------------------------- CARD 4 START ---------------------------------------------->
+<div class="event">
+    <div class="rank">C</div>
+    <div class="front">
+        <img class="thumbnail" src="./img/event4.jpg" alt="">
+        <h3 class="name">Event Name</h3>
+        <div class="stats">
+            <div class="streamers">
+                <img src="./img/img1.jpeg" alt="">
+                <img src="./img/img2.jpg" alt="">
+                <img src="./img/img3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <div class="streaming-info">
+            <p class="event-stat">25th<span>November</span></p>
+            <p class="event-stat">6-8pm<span>Online</span></p>
+        </div>
+        <button class="btn">Register</button>
+        <div class="streamers">
+            <div class="streamer">
+                <div class="icon"><img src="./img/img1.jpeg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Mr.ABC</p>
+            </div>
+            <div class="streamer">
+                <div class="icon"><img src="./img/img2.jpg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Ms.PQR</p>
+            </div>
+            <div class="streamer">
+                <div class="icon"><img src="./img/img3.jpg" alt=""></div>
+                <p class="name">Teacher</p>
+                <p class="number">Mr.XZY</p>
+            </div>
+        </div>
+    </div>
+        <div class="background"></div>
+</div>
+<!-- ---------------------------------------------- CARD 4 END ---------------------------------------------->
+</div>
+</div>
+</body>
+
+</html>

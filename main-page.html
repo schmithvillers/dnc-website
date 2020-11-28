@@ -1,0 +1,101 @@
+    <!DOCTYPE html>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://blogfonts.com/css/aWQ9MTQwNzg5JnN1Yj03ODkmYz10JnR0Zj1UQ0NNX19fXy5UVEYmbj10dy1jZW4tbXQtY29uZGVuc2VkLTI/Tw Cen MT Condensed.ttf" rel="stylesheet" type="text/css"/>
+    <link href="https://blogfonts.com/css/aWQ9MTQwNzg5JnN1Yj03ODkmYz10JnR0Zj1Ud0Nlbk1UQ29uZGVuc2VkQm9sZC50dGYmbj10dy1jZW4tbXQtY29uZGVuc2Vk/Tw Cen MT Condensed.ttf" rel="stylesheet" type="text/css"/>
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/main-style.css">
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body >
+    <!-- ----------------------------------------------SIDE NAV-BAR START ----------------------------------------------> 
+    <div >
+        
+        <div id="mySidenav" class="sidenav ">
+            <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" style="color: rgb(205, 96, 205);">HOME</a>
+            <a href="./event-page.html">EVENT</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SETTINGS</a>
+        </div>
+        
+        <div id="main" class="sidebar">
+            <span style="font-size:20px;cursor: default;" onclick="openNav()">&#8594;</span>
+            <br><br>
+            <img class="home-icon" style="filter: grayscale(0);" src="./icon/2947980-user-interface/logo/home1.png">
+            <br>
+            <br>
+            <a href="./event-page.html"><img class="home-icon" src="./icon/2947980-user-interface/logo/event1.png"></a>
+            <br><br>
+            <img class="home-icon" src="./icon/2947980-user-interface/logo/about1.png">
+            <br><br>
+            <img class="home-icon" src="./icon/2947980-user-interface/logo/setting1.png">
+        </div>
+        
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "130px";
+            document.getElementById("main").style.marginLeft = "130px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    <!-- ---------------------------------------------- SIDE NAV-BAR END ---------------------------------------------->   
+        <div class="text-area">
+            <div >
+                <div class="wave"></div>
+              </div>
+              <div >
+                <div class="wave1"></div>
+              </div>
+              <div >
+                <div class="wave2"></div>
+              </div>
+            <a class="join-us">
+                <span class="join" onclick="openNav1()"> JOIN US</span> 
+            </a>
+            <br>
+            <br>
+            <img class="main-dnc" src="./img/dnc-main-text.png">
+        </div>
+    <!-- ----------------------------------------REGISTERATION OVERLAY BODY START--------------------------------->
+    <div >
+        <div id="ovlay" class="overlay">
+            <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+            <div class="overlay-content">
+                <form action="/action_page.php" class="form-style">
+                    <input type="text" class="form-input" placeholder="First Name">
+                    <input type="text" class="form-input" placeholder="Middle Name">
+                    <input type="text" class="form-input" placeholder="Last Name">
+                    <input type="text" class="form-input" placeholder="Email ID">
+                    <input type="text" class="form-input" placeholder="WhatsApp Number">
+                    <input type="text" class="form-input" placeholder="Date of Birth">
+                    <input type="text" class="form-input" placeholder="Which year of college are you in?">
+                    <input type="text" class="form-input" placeholder="College Name">
+                    <input type="text" class="form-input" placeholder="Degree">
+                    <input type="text" class="form-input" placeholder="Branch">
+                    <input type="submit" class="submit" value="Submit">
+                </form> 
+        </div>
+        <script>
+        function openNav1() {
+        document.getElementById("ovlay").style.height = "100%";
+        }
+         function closeNav1() {
+        document.getElementById("ovlay").style.height = "0%";
+        }
+      </script>
+    </div>
+<!-- ----------------------------------------REGISTERATION OVERLAY BODY END--------------------------------->
+    </body>
+
+    </html>
